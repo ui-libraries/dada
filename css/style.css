@@ -241,7 +241,7 @@ input {
   padding: 67px 0; }
   .header .logo {
     margin-top: 6px;
-    background: url(/themes/dada/images/logo.svg) no-repeat;
+    background: url(../images/logo.svg) no-repeat;
     background-size: contain;
     width: 490px;
     height: 30px;
@@ -252,9 +252,9 @@ input {
       position: absolute;
       left: -999em;
       opacity: 0;
-      background: url(/themes/dada/images/logo_h.svg) no-repeat; }
+      background: url(../images/logo_h.svg) no-repeat; }
     .header .logo:hover {
-      background-image: url(/themes/dada/images/logo_h.svg); }
+      background-image: url(../images/logo_h.svg); }
 
 .menu {
   float: right;
