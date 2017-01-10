@@ -23,14 +23,15 @@
 
     <!-- Stylesheets -->
     <link href="//fonts.googleapis.com/css?family=Roboto:300,400,500,700" rel="stylesheet">
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
     <?php    
     queue_css_file(array('style'));
     echo head_css();
     queue_js_file(array('main.min'));
-    //echo head_js();
+    echo head_js();
     ?>
-    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
-    <script type="text/javascript" src="themes/dada/javascripts/main.min.js"></script>  
+    
+      
 </head>
 
 <?php echo body_tag(array('id' => @$bodyid, 'class' => @$bodyclass)); ?>    
