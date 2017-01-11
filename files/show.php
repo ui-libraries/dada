@@ -7,11 +7,13 @@
     set_current_record('item', $item);
     $fileId = metadata('file', 'id');
 
-    $paginationUrls = array();  
+    $paginationUrls = array();
+    $paginationUrls['prev'] = '';
+    $paginationUrls['next'] = ''; 
     $files = get_records('file', array('item_id'=>$item_id), 999);
-    foreach ($files as $file) {
+    foreach ($files as $filez) {
         
-        $fileID = $file->id;
+        $fileID = $filez->id;
         if (isset($current)) {
             $paginationUrls['next'] = WEB_ROOT . '/files/show/' . $fileID;
             break;
