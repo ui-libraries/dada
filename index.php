@@ -70,7 +70,7 @@
 					<li id="aragon"><a href="#d2">LOUIS ARAGON</a></li>
 					<li><a href="#d1">VIKING EGGELING </a></li>
 					<li><a href="#d1">ILIAZD</a></li>
-					<li><a href="#d1">CELINE ARNAUD</a></li>
+					<li id="arnaud"><a href="#d1">CELINE ARNAUD</a></li>
 					<li><a href="#d1">CARL EINSTEIN </a></li>
 					<li><a href="#d2">MARCEL JANCO </a></li>
 					<li><a href="#d1">KURT SCHWITTERS</a></li>
