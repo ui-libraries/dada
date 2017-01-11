@@ -39,7 +39,7 @@
 
         <header class="header">
         <div class="container">
-            <a href="#" class="logo" title="DADA">DADA</a>
+            <a href="<?php echo WEB_ROOT; ?>" class="logo" title="DADA">DADA</a>
             <nav class="menu">
                 <div class="trigger"><span></span><span></span><span></span></div>
                 <ul class="main-nav">
