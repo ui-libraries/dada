@@ -1,51 +1,62 @@
 <?php
-    $fileTitle = metadata('file', array('Dublin Core', 'Title')) ? strip_formatting(metadata('file', array('Dublin Core', 'Title'))) : metadata('file', 'original filename');
+    $fileTitle = metadata('file', array('Dublin Core', 'Title'));
+    
 
-    if ($fileTitle != '') {
-        $fileTitle = ': &quot;' . $fileTitle . '&quot; ';
-    } else {
-        $fileTitle = '';
+    $item_id = metadata('file', 'item_id');
+    $item = get_record_by_id('item', $item_id);
+    set_current_record('item', $item);
+    $fileId = metadata('file', 'id');
+
+    $paginationUrls = array();  
+    $files = get_records('file', array('item_id'=>$item_id), 999);
+    foreach ($files as $file) {
+        
+        $fileID = $file->id;
+        if (isset($current)) {
+            $paginationUrls['next'] = WEB_ROOT . '/files/show/' . $fileID;
+            break;
+        }
+        if ($fileID == $fileId) {
+            $current = true;
+        } else {
+            $paginationUrls['prev'] = WEB_ROOT . '/files/show/' . $fileID;
+        }
     }
-    $fileTitle = __('File #%s', metadata('file', 'id')) . $fileTitle;
 ?>
+
+
 <?php echo head(array('title' => $fileTitle, 'bodyclass'=>'files show primary-secondary')); ?>
 
-<h1><?php echo $fileTitle; ?></h1>
-
-<div id="primary">
-    <?php echo file_markup($file, array('imageSize'=>'fullsize')); ?>
-    <?php echo all_element_texts('file'); ?>
+<div class="author-head">
+    <div class="container">
+        <h1><?php echo $fileTitle; ?></h1>        
+        <div class="image">
+            <img srcset="<?php echo WEB_ROOT; ?>/themes/dada/images/bg_red.png 1x, <?php echo WEB_ROOT; ?>/themes/dada/images/bg_red@2x.png 2x" alt="">
+        </div>        
+    </div>
+</div>
+<div class="covers-details">
+    <div class="container">
+        <div class="pagination">
+            <ul>
+                <li class="active"><a href="<?php echo $paginationUrls['prev']; ?>">previous page</a></li>
+                <li><a href="<?php echo $paginationUrls['next']; ?>">NEXT PAGE</a></li>
+                <li class="active"><?php echo link_to_item("FULL ISSUE"); ?></li>                
+            </ul>
+        </div>
+        <div class="image">
+            <?php echo file_markup($file, array('imageSize'=>'fullsize')); ?>
+        </div>
+        <div class="pagination">
+            <ul>
+                <?php echo $this->id; ?>                
+                <li class="active"><a href="<?php echo $paginationUrls['prev']; ?>">previous page</a></li>
+                <li><a href="<?php echo $paginationUrls['next']; ?>">NEXT PAGE</a></li>
+                <li class="active"><?php echo link_to_item("FULL ISSUE"); ?></li>
+            </ul>
+        </div>
+    </div>
+</div>
 </div>
 
-<aside id="sidebar">
-    <div id="format-metadata">
-        <h2><?php echo __('Format Metadata'); ?></h2>
-        <div id="original-filename" class="element">
-            <h3><?php echo __('Original Filename'); ?></h3>
-            <div class="element-text"><?php echo metadata('file', 'Original Filename'); ?></div>
-        </div>
-    
-        <div id="file-size" class="element">
-            <h3><?php echo __('File Size'); ?></h3>
-            <div class="element-text"><?php echo __('%s bytes', metadata('file', 'Size')); ?></div>
-        </div>
-
-        <div id="authentication" class="element">
-            <h3><?php echo __('Authentication'); ?></h3>
-            <div class="element-text"><?php echo metadata('file', 'Authentication'); ?></div>
-        </div>
-    </div><!-- end format-metadata -->
-    
-    <div id="type-metadata" class="section">
-        <h2><?php echo __('Type Metadata'); ?></h2>
-        <div id="mime-type-browser" class="element">
-            <h3><?php echo __('Mime Type'); ?></h3>
-            <div class="element-text"><?php echo metadata('file', 'MIME Type'); ?></div>
-        </div>
-        <div id="file-type-os" class="element">
-            <h3><?php echo __('File Type / OS'); ?></h3>
-            <div class="element-text"><?php echo metadata('file', 'Type OS'); ?></div>
-        </div>
-    </div><!-- end type-metadata -->
-</aside>
 <?php echo foot();?>
