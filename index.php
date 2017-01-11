@@ -67,19 +67,19 @@
 			</div>
 			<div class="list">
 				<ul>
-					<li><a href="#d1">LOUIS ARAGON</a></li>
+					<li id="aragon"><a href="#d2">LOUIS ARAGON</a></li>
 					<li><a href="#d1">VIKING EGGELING </a></li>
 					<li><a href="#d1">ILIAZD</a></li>
 					<li><a href="#d1">CELINE ARNAUD</a></li>
 					<li><a href="#d1">CARL EINSTEIN </a></li>
-					<li><a href="#d1">MARCEL JANCO </a></li>
+					<li><a href="#d2">MARCEL JANCO </a></li>
 					<li><a href="#d1">KURT SCHWITTERS</a></li>
 					<li><a href="#d1">WALTER CONRAD ARENSBERG</a></li>
 					<li><a href="#d1">PAUL ELUARD</a></li>
 					<li><a href="#d1">MATTHEW JOSEPHSON </a></li>
 					<li><a href="#d1">ARTHUR SEGAL </a></li>
 					<li><a href="#d1">JEAN (HANS) ARP </a></li>
-					<li><a href="#d1">MAX ERNST</a></li>
+					<li id="ernst"><a href="#d1">MAX ERNST</a></li>
 					<li><a href="#d1">FRANZ JUNG </a></li>
 					<li><a href="#d1">FRANZ SEIWERT</a></li>
 					<li><a href="#d1">JOHANNES BAADER </a></li>
@@ -157,28 +157,9 @@
 					<li><a href="#d1">MORTON L. SCHAMBERG</a></li>
 				</ul>
 				<section class="details-modal">
-					<article id="d1">
-						<a href="#" class="close">X</a>
-						<h3>MAX ERNST</h3>
-						<div class="cols">
-							<div class="entry-s">
-								<p>Born 2 April 1891 in Brühl, Germany.<br>Died 1 April 1976 in Paris.</p>
-								<p>Artist associated with the Dada movement in Cologne and Paris.</p>
-								<p>The International Dada Archive has extensive holdings of works by and about Ernst.</p>
-								<p><strong>BOOKS FROM THE DIGITAL DADA LIBRARY</strong></p>
-								<p>+ Dada Ausstellung: Dada-Vorfrühling -- 1920<br>+ Exposition Dada Max Ernst -- 1921</p>
-								<p><strong>WORKS IN DADA ERA PUBLICATIONS FROM THE DIGITAL DADA LIBRARY</strong></p>
-								<p><a href="#">+ Click here for links to articles, poems, etc.</a></p>
-								<p><strong>IMAGES</strong><br>+ Everyone Here Speaks Latin -- 1943. Painting. New Orleans Museum of Art. SILS Art Image Browser.<br>+ Four Shoes -- 1972. Print. University of Michigan Museum of Art. SILS Art Image Browser.<br>+ Light of Impassable Decay (Lumiere infranchissable pourriture) -- 1964. Print. University of Michigan Museum of Art. SILS Art Image Browser.<br>+ Portrait of Auguste Bolte (Portrait Auguste Bolte) -- 1967. Print. University of Michigan Museum of Art. SILS Art Image Browser.<br>+ School for Birds (Ecole d'Oiseaux) -- 1947. Print. University of Michigan Museum of Art. SILS Art Image Browser. </p>
-								<p><strong>OTHER INTERNET RESOURCES</strong></p>
-								<p>Max Ernst Museum -- Web site of the Max Ernst Museum in Brühl, Germany.</p>
-							</div>
-							<div class="image">
-								<img srcset="themes/dada/images/p1.jpg 1x, themes/dada/images/p1@2x.jpg 2x" alt="">
-							</div>
-						</div>
-					</article>
-				</section>
+					<a href="#" class="close">X</a>
+						
+				</section>								
 			</div>
 		</div>
 	</div>
@@ -204,7 +185,7 @@
 			</div>
 		</div>
 		<div class="image">
-			<div class="bg retina" style="background-image: url(/themes/dadathemes/dada/images/h4.jpg);"></div>
+			<div class="bg retina" style="background-image: url(themes/dada/images/h4.jpg);"></div>
 			<div class="bg non-retina" style="background-image: url(themes/dada/images/h4.jpg);"></div>
 			<a href="#" class="btn btn-outline">ENTER <strong>THE ONLINE BIBLIOGRAPHY</strong></a>
 		</div>
