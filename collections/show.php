@@ -26,8 +26,8 @@ $collectionCreator = strip_formatting(metadata('collection', array('Dublin Core'
                 <article>
                     <?php echo link_to_item(item_image('square_thumbnail', array('alt' => $itemTitle))); ?>
                     <div class="text">
-                        <h6><?php echo $itemTitle; ?></h6>
-                        <p><?php echo link_to_item("View"); ?></p>
+                        <h4><?php echo $itemTitle; ?></h4>
+                        <h6><?php echo link_to_item("View"); ?></h6>
                     </div>
                 </article>
             <?php endforeach; ?>            

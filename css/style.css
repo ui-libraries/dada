@@ -830,7 +830,7 @@ input {
   background: rgba(35, 21, 32, 0.2);
   padding: 138px 0 128px;
   overflow: hidden; }
-  .footer.red {
+  .footer .red {
     background: #CC0000; }
   .footer .left {
     padding: 25px 80px;

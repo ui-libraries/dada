@@ -36,8 +36,8 @@ $title = $collectionTitle . ' | ' . $itemTitle;
                 <article>
                     <?php echo '<a href="' . WEB_ROOT . '/files/show/' . $file->id . '">' . file_image('square_thumbnail', array('alt' => $fileTitle)) .'</a>'; ?>
                     <div class="text">
-                        <h6><?php echo $fileTitle; ?></h6>
-                        <p><?php echo '<a href="' . WEB_ROOT . '/files/show/' . $file->id . '">View</a>' ?></p>
+                        <h4><?php echo $fileTitle; ?></h4>
+                        <h6><?php echo '<a href="' . WEB_ROOT . '/files/show/' . $file->id . '">View</a>' ?></h6>
                     </div>
                 </article>
             <?php endforeach; ?>            
