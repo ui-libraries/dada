@@ -8,7 +8,7 @@
     <meta name="format-detection" content="telephone=no">
     <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700" rel="stylesheet">
     <?php endif; ?>
-    <?php    
+    <?php
     if (isset($title)) {
         $titleParts[] = strip_formatting($title);
     }
@@ -24,17 +24,17 @@
     <!-- Stylesheets -->
     <link href="//fonts.googleapis.com/css?family=Roboto:300,400,500,700" rel="stylesheet">
     <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
-    <?php    
+    <?php
     queue_css_file(array('style'));
     echo head_css();
     queue_js_file(array('main.min'));
     echo head_js();
     ?>
-    
-      
+
+
 </head>
 
-<?php echo body_tag(array('id' => @$bodyid, 'class' => @$bodyclass)); ?>    
+<?php echo body_tag(array('id' => @$bodyid, 'class' => @$bodyclass)); ?>
     <?php fire_plugin_hook('public_body', array('view'=>$this)); ?>
 
         <header class="header">
@@ -44,10 +44,10 @@
                 <div class="trigger"><span></span><span></span><span></span></div>
                 <ul class="main-nav">
                     <li><a href="#" class="call-sub">DIGITAL DADA LIBRARY</a></li>
-                    <li><a class="sub-scroll" href="#BIBLIOGRAPHY">BIBLIOGRAPHY/CATALOG</a></li>
-                    <li><a class="sub-scroll" href="#DADAISTS">DADAISTS</a></li>
-                    <li><a class="sub-scroll" href="#DADA">DADA/ SURREALISM JOURNAL</a></li>
-                    <li><a class="sub-scroll" href="#RESOURCES">RESOURCES</a></li>
+                    <li><a class="sub-scroll" href="<?php echo WEB_ROOT; ?>#BIBLIOGRAPHY">BIBLIOGRAPHY/CATALOG</a></li>
+                    <li><a class="sub-scroll" href="<?php echo WEB_ROOT; ?>#DADAISTS">DADAISTS</a></li>
+                    <li><a class="sub-scroll" href="<?php echo WEB_ROOT; ?>#DADA">DADA/ SURREALISM JOURNAL</a></li>
+                    <li><a class="sub-scroll" href="<?php echo WEB_ROOT; ?>#RESOURCES">RESOURCES</a></li>
                     <li><a href="mailto:timothy-shipe@uiowa.edu">CONTACT</a></li>
                 </ul>
                 <div class="sub-nav">
@@ -106,321 +106,321 @@
                                     <li>
                                         <span>PIERRE ALBERT-BIROT:</span>
                                         <ul>
-                                            <li><a href="<?php echo WEB_ROOT; ?>/collections/show/">LAROUNTALA</a></li>
+                                            <li><a href="<?php echo WEB_ROOT; ?>/items/show/360">LAROUNTALA</a></li>
                                         </ul>
                                     </li>
                                     <li>
                                         <span>CELINE ARNAULD:</span>
                                         <ul>
-                                            <li><a href="<?php echo WEB_ROOT; ?>/collections/show/">TOURNEVIRE</a></li>
+                                            <li><a href="<?php echo WEB_ROOT; ?>/items/show/364">TOURNEVIRE</a></li>
                                         </ul>
                                     </li>
                                     <li>
                                         <span>JEAN ARP:</span>
                                         <ul>
-                                            <li><a href="<?php echo WEB_ROOT; ?>/collections/show/">NEUE FRANZÖSISCHE MALEREI</a></li>
-                                            <li><a href="<?php echo WEB_ROOT; ?>/collections/show/">DIE WOLKENPUMPE</a></li>
+                                            <li><a href="<?php echo WEB_ROOT; ?>/items/show/365">NEUE FRANZÖSISCHE MALEREI</a></li>
+                                            <li><a href="<?php echo WEB_ROOT; ?>/items/show/366">DIE WOLKENPUMPE</a></li>
                                         </ul>
                                     </li>
                                     <li>
                                         <span>LOUIS ARAGON:</span>
                                         <ul>
-                                            <li><a href="<?php echo WEB_ROOT; ?>/collections/show/">ANICET</a></li>
-                                            <li><a href="<?php echo WEB_ROOT; ?>/collections/show/">LES AVENTURES DE TÉLÉMAQUE</a></li>
-                                            <li><a href="<?php echo WEB_ROOT; ?>/collections/show/">FEU DE JOIE</a></li>
+                                            <li><a href="<?php echo WEB_ROOT; ?>/items/show/358">ANICET</a></li>
+                                            <li><a href="<?php echo WEB_ROOT; ?>/items/show/367">LES AVENTURES DE TÉLÉMAQUE</a></li>
+                                            <li><a href="<?php echo WEB_ROOT; ?>/items/show/368">FEU DE JOIE</a></li>
                                         </ul>
                                     </li>
                                     <li>
                                         <span>JOAHNNES BAADER:</span>
                                         <ul>
-                                            <li><a href="<?php echo WEB_ROOT; ?>/collections/show/">[POSTKARTE HINDENBURG]</a></li>
+                                            <li><a href="<?php echo WEB_ROOT; ?>/items/show/356">[POSTKARTE HINDENBURG]</a></li>
                                         </ul>
                                     </li>
                                     <li>
                                         <span>HUGO BALL:</span>
                                         <ul>
-                                            <li><a href="<?php echo WEB_ROOT; ?>/collections/show/">FLAMETTI</a></li>
-                                            <li><a href="<?php echo WEB_ROOT; ?>/collections/show/">ZUR KRITIK DER DEUTSCHEN INTELLIGENZ</a></li>
+                                            <li><a href="<?php echo WEB_ROOT; ?>/items/show/354">FLAMETTI</a></li>
+                                            <li><a href="<?php echo WEB_ROOT; ?>/items/show/353">ZUR KRITIK DER DEUTSCHEN INTELLIGENZ</a></li>
                                         </ul>
                                     </li>
                                     <li>
                                         <span>SERGE CHARCHOUNE:</span>
                                         <ul>
-                                            <li><a href="<?php echo WEB_ROOT; ?>/collections/show/">DADAIZM: KOMPILIATSIIA</a></li>
+                                            <li><a href="<?php echo WEB_ROOT; ?>/items/show/350">DADAIZM: KOMPILIATSIIA</a></li>
                                         </ul>
                                     </li>
                                     <li>
                                         <span>THEO VAN DOESBURG:</span>
                                         <ul>
-                                            <li><a href="<?php echo WEB_ROOT; ?>/collections/show/">ANTHOLOGIE-BONSET</a></li>
-                                            <li><a href="<?php echo WEB_ROOT; ?>/collections/show/">CLASSIQUE BAROQUE MODERNE</a></li>
-                                            <li><a href="<?php echo WEB_ROOT; ?>/collections/show/">DE NIEUWE BEWEGING IN DE SCHILDERKUNST</a></li>
-                                            <li><a href="<?php echo WEB_ROOT; ?>/collections/show/">DRIE VOORDRACHTEN OVER DE NIEUWE BEELDENDE KUNST</a></li>
-                                            <li><a href="<?php echo WEB_ROOT; ?>/collections/show/">WAT IS DADA?</a></li>
+                                            <li><a href="<?php echo WEB_ROOT; ?>/items/show/340">ANTHOLOGIE-BONSET</a></li>
+                                            <li><a href="<?php echo WEB_ROOT; ?>/items/show/369">CLASSIQUE BAROQUE MODERNE</a></li>
+                                            <li><a href="<?php echo WEB_ROOT; ?>/items/show/348">DE NIEUWE BEWEGING IN DE SCHILDERKUNST</a></li>
+                                            <li><a href="<?php echo WEB_ROOT; ?>/items/show/345">DRIE VOORDRACHTEN OVER DE NIEUWE BEELDENDE KUNST</a></li>
+                                            <li><a href="<?php echo WEB_ROOT; ?>/items/show/344">WAT IS DADA?</a></li>
                                         </ul>
                                     </li>
                                     <li>
                                         <span>CARL EINSTEIN:</span>
                                         <ul>
-                                            <li><a href="<?php echo WEB_ROOT; ?>/collections/show/">AFRIKANISCHE PLASTIK</a></li>
-                                            <li><a href="<?php echo WEB_ROOT; ?>/collections/show/">NEGERPLASTIK</a></li>
+                                            <li><a href="<?php echo WEB_ROOT; ?>/items/show/343">AFRIKANISCHE PLASTIK</a></li>
+                                            <li><a href="<?php echo WEB_ROOT; ?>/items/show/342">NEGERPLASTIK</a></li>
                                         </ul>
                                     </li>
                                     <li>
                                         <span>PAUL ELUARD:</span>
                                         <ul>
-                                            <li><a href="<?php echo WEB_ROOT; ?>/collections/show/">LES ANIMAUX ET LEURS HOMMES</a></li>
-                                            <li><a href="<?php echo WEB_ROOT; ?>/collections/show/">LES NÉCESSITÉS DE LA VIE</a></li>
+                                            <li><a href="<?php echo WEB_ROOT; ?>/items/show/339">LES ANIMAUX ET LEURS HOMMES</a></li>
+                                            <li><a href="<?php echo WEB_ROOT; ?>/items/show/336">LES NÉCESSITÉS DE LA VIE</a></li>
                                         </ul>
                                     </li>
                                     <li>
                                         <span>MAX ERNST:</span>
                                         <ul>
-                                            <li><a href="<?php echo WEB_ROOT; ?>/collections/show/">EXPOSITION MAX ERNST</a></li>
+                                            <li><a href="<?php echo WEB_ROOT; ?>/items/show/328">EXPOSITION MAX ERNST</a></li>
                                         </ul>
                                     </li>
                                     <li>
                                         <span>JULIUS EVOLA:</span>
                                         <ul>
-                                            <li><a href="<?php echo WEB_ROOT; ?>/collections/show/">ARTE ASTRATTA</a></li>
+                                            <li><a href="<?php echo WEB_ROOT; ?>/items/show/326">ARTE ASTRATTA</a></li>
                                         </ul>
                                     </li>
                                     <li class="long">
                                         <span>EDGAR FIRN (KARL DÖHMAN) (DAIMONIDES):</span>
                                         <ul>
-                                            <li><a href="<?php echo WEB_ROOT; ?>/collections/show/">BIBERGEIL</a></li>
+                                            <li><a href="<?php echo WEB_ROOT; ?>/items/show/325">BIBERGEIL</a></li>
                                         </ul>
                                     </li>
                                     <li>
                                         <span>GEORGE GROSZ:</span>
                                         <ul>
-                                            <li><a href="<?php echo WEB_ROOT; ?>/collections/show/">DAS GESICHT DER HERRSCHENDEN KLASSE</a></li>
-                                            <li><a href="<?php echo WEB_ROOT; ?>/collections/show/">MIT PINSEL UND SCHERE</a></li>
+                                            <li><a href="<?php echo WEB_ROOT; ?>/items/show/323">DAS GESICHT DER HERRSCHENDEN KLASSE</a></li>
+                                            <li><a href="<?php echo WEB_ROOT; ?>/items/show/322">MIT PINSEL UND SCHERE</a></li>
                                         </ul>
                                     </li>
                                     <li>
                                         <span>MARSDEN HARTLEY:</span>
                                         <ul>
-                                            <li><a href="<?php echo WEB_ROOT; ?>/collections/show/">ADVENTURES IN THE ARTS</a></li>
+                                            <li><a href="<?php echo WEB_ROOT; ?>/items/show/321">ADVENTURES IN THE ARTS</a></li>
                                         </ul>
                                     </li>
                                     <li>
                                         <span>RAOUL HAUSMANN:</span>
                                         <ul>
-                                            <li><a href="<?php echo WEB_ROOT; ?>/collections/show/">PRÉSENTISMUS</a></li>
+                                            <li><a href="<?php echo WEB_ROOT; ?>/items/show/320">PRÉSENTISMUS</a></li>
                                         </ul>
                                     </li>
                                     <li>
                                         <span>EMMY HENNINGS:</span>
                                         <ul>
-                                            <li><a href="<?php echo WEB_ROOT; ?>/collections/show/">DAS BRANDMAL</a></li>
-                                            <li><a href="<?php echo WEB_ROOT; ?>/collections/show/">GEFÄNGNIS</a></li>
-                                            <li><a href="<?php echo WEB_ROOT; ?>/collections/show/">DIE LETZTE FREUDE</a></li>
+                                            <li><a href="<?php echo WEB_ROOT; ?>/items/show/319">DAS BRANDMAL</a></li>
+                                            <li><a href="<?php echo WEB_ROOT; ?>/items/show/318">GEFÄNGNIS</a></li>
+                                            <li><a href="<?php echo WEB_ROOT; ?>/items/show/317">DIE LETZTE FREUDE</a></li>
                                         </ul>
                                     </li>
                                     <li>
                                         <span>WIELAND HERZFELDE:</span>
                                         <ul>
-                                            <li><a href="<?php echo WEB_ROOT; ?>/collections/show/">SCHUTZHAFT</a></li>
-                                            <li><a href="<?php echo WEB_ROOT; ?>/collections/show/">TRAGIGROTESKEN DER NACHT</a></li>
+                                            <li><a href="<?php echo WEB_ROOT; ?>/items/show/315">SCHUTZHAFT</a></li>
+                                            <li><a href="<?php echo WEB_ROOT; ?>/items/show/311">TRAGIGROTESKEN DER NACHT</a></li>
                                         </ul>
                                     </li>
                                     <li>
                                         <span>RICHARD HUELSENBECK:</span>
                                         <ul>
-                                            <li><a href="<?php echo WEB_ROOT; ?>/collections/show/">DADA ALMANACH</a></li>
-                                            <li><a href="<?php echo WEB_ROOT; ?>/collections/show/">DADA SIEGT</a></li>
-                                            <li><a href="<?php echo WEB_ROOT; ?>/collections/show/">DEUTSCHLAND MUSS UNTERGEHEN</a></li>
-                                            <li><a href="<?php echo WEB_ROOT; ?>/collections/show/">DOCTOR BILLIG AM ENDE</a></li>
-                                            <li><a href="<?php echo WEB_ROOT; ?>/collections/show/">EN AVANT DADA</a></li>
-                                            <li><a href="<?php echo WEB_ROOT; ?>/collections/show/">PHANTASTISCHE GEBETE</a></li>
-                                            <li><a href="<?php echo WEB_ROOT; ?>/collections/show/">SCHALABEN, SCHALABAI, SCHALAMEZOMAI</a></li>
-                                            <li><a href="<?php echo WEB_ROOT; ?>/collections/show/">VERWANDLUNGEN</a></li>
+                                            <li><a href="<?php echo WEB_ROOT; ?>/items/show/310">DADA ALMANACH</a></li>
+                                            <li><a href="<?php echo WEB_ROOT; ?>/items/show/308">DADA SIEGT</a></li>
+                                            <li><a href="<?php echo WEB_ROOT; ?>/items/show/307">DEUTSCHLAND MUSS UNTERGEHEN</a></li>
+                                            <li><a href="<?php echo WEB_ROOT; ?>/items/show/306">DOCTOR BILLIG AM ENDE</a></li>
+                                            <li><a href="<?php echo WEB_ROOT; ?>/items/show/305">EN AVANT DADA</a></li>
+                                            <li><a href="<?php echo WEB_ROOT; ?>/items/show/304">PHANTASTISCHE GEBETE</a></li>
+                                            <li><a href="<?php echo WEB_ROOT; ?>/items/show/303">SCHALABEN, SCHALABAI, SCHALAMEZOMAI</a></li>
+                                            <li><a href="<?php echo WEB_ROOT; ?>/items/show/302">VERWANDLUNGEN</a></li>
                                         </ul>
                                     </li>
                                     <li>
                                         <span>Iliazd (Ilia Zdanevich):</span>
                                         <ul>
-                                            <li><a href="<?php echo WEB_ROOT; ?>/collections/show/">LIDANTIU FARAM (LEDANTU LE PHARE)</a></li>
+                                            <li><a href="<?php echo WEB_ROOT; ?>/items/show/247">LIDANTIU FARAM (LEDANTU LE PHARE)</a></li>
                                         </ul>
                                     </li>
                                     <li>
                                         <span>MATTHEW JOSEPHSON:</span>
                                         <ul>
-                                            <li><a href="<?php echo WEB_ROOT; ?>/collections/show/">GALIMATHIAS</a></li>
+                                            <li><a href="<?php echo WEB_ROOT; ?>/items/show/301">GALIMATHIAS</a></li>
                                         </ul>
                                     </li>
                                     <li>
                                         <span>FRANZ JUNG:</span>
                                         <ul>
-                                            <li><a href="<?php echo WEB_ROOT; ?>/collections/show/">ARBEITSFRIEDE</a></li>
-                                            <li><a href="<?php echo WEB_ROOT; ?>/collections/show/">HUNGER AN DER WOLGA</a></li>
-                                            <li><a href="<?php echo WEB_ROOT; ?>/collections/show/">OPFERUNG</a></li>
-                                            <li><a href="<?php echo WEB_ROOT; ?>/collections/show/">PROLETARIER</a></li>
-                                            <li><a href="<?php echo WEB_ROOT; ?>/collections/show/">DIE ROTE WOCHE</a></li>
-                                            <li><a href="<?php echo WEB_ROOT; ?>/collections/show/">SAUL</a></li>
-                                            <li><a href="<?php echo WEB_ROOT; ?>/collections/show/">SOPHIE</a></li>
-                                            <li><a href="<?php echo WEB_ROOT; ?>/collections/show/">DER SPRUNG AUS DER WELT</a></li>
-                                            <li><a href="<?php echo WEB_ROOT; ?>/collections/show/">DIE TECHNIK DES GLÜCKS</a></li>
-                                            <li><a href="<?php echo WEB_ROOT; ?>/collections/show/">DAS TROTTELBUCH</a></li>
+                                            <li><a href="<?php echo WEB_ROOT; ?>/items/show/300">ARBEITSFRIEDE</a></li>
+                                            <li><a href="<?php echo WEB_ROOT; ?>/items/show/299">HUNGER AN DER WOLGA</a></li>
+                                            <li><a href="<?php echo WEB_ROOT; ?>/items/show/298">OPFERUNG</a></li>
+                                            <li><a href="<?php echo WEB_ROOT; ?>/items/show/297">PROLETARIER</a></li>
+                                            <li><a href="<?php echo WEB_ROOT; ?>/items/show/296">DIE ROTE WOCHE</a></li>
+                                            <li><a href="<?php echo WEB_ROOT; ?>/items/show/295">SAUL</a></li>
+                                            <li><a href="<?php echo WEB_ROOT; ?>/items/show/294">SOPHIE</a></li>
+                                            <li><a href="<?php echo WEB_ROOT; ?>/items/show/292">DER SPRUNG AUS DER WELT</a></li>
+                                            <li><a href="<?php echo WEB_ROOT; ?>/items/show/290">DIE TECHNIK DES GLÜCKS</a></li>
+                                            <li><a href="<?php echo WEB_ROOT; ?>/items/show/289">DAS TROTTELBUCH</a></li>
                                         </ul>
                                     </li>
                                     <li>
                                         <span>LAJOS KÁSSAK</span>
                                         <ul>
-                                            <li><a href="<?php echo WEB_ROOT; ?>/collections/show/">NOVELLÁSKÖNYV</a></li>
+                                            <li><a href="<?php echo WEB_ROOT; ?>/items/show/288">NOVELLÁSKÖNYV</a></li>
                                         </ul>
                                     </li>
                                     <li>
                                         <span>JULIUS KREKEL<br>(CLÉMENT PANSAERS):</span>
                                         <ul>
                                             <li></li>
-                                            <li><a href="<?php echo WEB_ROOT; ?>/collections/show/">ZIEK; EENE MOEDER; HERTETOLKEN</a></li>
+                                            <li><a href="<?php echo WEB_ROOT; ?>/items/show/263">ZIEK; EENE MOEDER; HERTETOLKEN</a></li>
                                         </ul>
                                     </li>
                                     <li>
                                         <span>MAN RAY:</span>
                                         <ul>
-                                            <li><a href="<?php echo WEB_ROOT; ?>/collections/show/">UNE BONNE NOUVELLE</a></li>
-                                            <li><a href="<?php echo WEB_ROOT; ?>/collections/show/">EXPOSITION DADA MAN RAY</a></li>
+                                            <li><a href="<?php echo WEB_ROOT; ?>/items/show/287">UNE BONNE NOUVELLE</a></li>
+                                            <li><a href="<?php echo WEB_ROOT; ?>/items/show/286">EXPOSITION DADA MAN RAY</a></li>
                                         </ul>
                                     </li>
                                     <li>
                                         <span>WALTER MEHRING:</span>
                                         <ul>
-                                            <li><a href="<?php echo WEB_ROOT; ?>/collections/show/">ALGIER</a></li>
-                                            <li><a href="<?php echo WEB_ROOT; ?>/collections/show/">DAS KETZERBREVIER</a></li>
-                                            <li><a href="<?php echo WEB_ROOT; ?>/collections/show/">DAS POLITISCHE CABARET</a></li>
+                                            <li><a href="<?php echo WEB_ROOT; ?>/items/show/275">ALGIER</a></li>
+                                            <li><a href="<?php echo WEB_ROOT; ?>/items/show/274">DAS KETZERBREVIER</a></li>
+                                            <li><a href="<?php echo WEB_ROOT; ?>/items/show/273">DAS POLITISCHE CABARET</a></li>
                                         </ul>
                                     </li>
                                     <li>
                                         <span>Paul van Ostaijen:</span>
                                         <ul>
-                                            <li><a href="<?php echo WEB_ROOT; ?>/collections/show/">BEZETTE STAD</a></li>
+                                            <li><a href="<?php echo WEB_ROOT; ?>/items/show/270">BEZETTE STAD</a></li>
                                         </ul>
                                     </li>
                                     <li>
                                         <span>CLÉMENT PANSAERS:</span>
                                         <ul>
-                                            <li><a href="<?php echo WEB_ROOT; ?>/collections/show/">L'APOLOGIE DE LA PARESSE</a></li>
-                                            <li><a href="<?php echo WEB_ROOT; ?>/collections/show/">BAR NICANOR</a></li>
-                                            <li><a href="<?php echo WEB_ROOT; ?>/collections/show/">LE PAN PAN AU CUL DU NU NÈGRE</a></li>
-                                            <li><a href="<?php echo WEB_ROOT; ?>/collections/show/">ZIEK; EENE MOEDER; HERTETOLKEN</a></li>
+                                            <li><a href="<?php echo WEB_ROOT; ?>/items/show/268">L'APOLOGIE DE LA PARESSE</a></li>
+                                            <li><a href="<?php echo WEB_ROOT; ?>/items/show/266">BAR NICANOR</a></li>
+                                            <li><a href="<?php echo WEB_ROOT; ?>/items/show/265">LE PAN PAN AU CUL DU NU NÈGRE</a></li>
+                                            <li><a href="<?php echo WEB_ROOT; ?>/items/show/263">ZIEK; EENE MOEDER; HERTETOLKEN</a></li>
                                         </ul>
                                     </li>
                                     <li>
                                         <span>WALTER PETRY:</span>
                                         <ul>
-                                            <li><a href="<?php echo WEB_ROOT; ?>/collections/show/">DIE DADAISTISCHE KORRUPTION</a></li>
+                                            <li><a href="<?php echo WEB_ROOT; ?>/items/show/261">DIE DADAISTISCHE KORRUPTION</a></li>
                                         </ul>
                                     </li>
                                     <li>
                                         <span>FRANCIS PICABIA:</span>
                                         <ul>
-                                            <li><a href="<?php echo WEB_ROOT; ?>/collections/show/">L'ATHLÈTE DES POMPES FUNÈBRES</a></li>
-                                            <li><a href="<?php echo WEB_ROOT; ?>/collections/show/">EXPOSITION DADA FRANCIS PICABIA</a></li>
-                                            <li><a href="<?php echo WEB_ROOT; ?>/collections/show/">JÉSUS CHRIST RASTAQUOUÈRE</a></li>
-                                            <li><a href="<?php echo WEB_ROOT; ?>/collections/show/">PENSÉES SANS LANGAGE</a></li>
-                                            <li><a href="<?php echo WEB_ROOT; ?>/collections/show/">POÈMES ET DESSINS DE LA FILLE NÉE SANS MÈRE</a></li>
-                                            <li><a href="<?php echo WEB_ROOT; ?>/collections/show/">UNIQUE EUNUQUE</a></li>
+                                            <li><a href="<?php echo WEB_ROOT; ?>/items/show/260">L'ATHLÈTE DES POMPES FUNÈBRES</a></li>
+                                            <li><a href="<?php echo WEB_ROOT; ?>/items/show/258">EXPOSITION DADA FRANCIS PICABIA</a></li>
+                                            <li><a href="<?php echo WEB_ROOT; ?>/items/show/256">JÉSUS CHRIST RASTAQUOUÈRE</a></li>
+                                            <li><a href="<?php echo WEB_ROOT; ?>/items/show/255">PENSÉES SANS LANGAGE</a></li>
+                                            <li><a href="<?php echo WEB_ROOT; ?>/items/show/251">POÈMES ET DESSINS DE LA FILLE NÉE SANS MÈRE</a></li>
+                                            <li><a href="<?php echo WEB_ROOT; ?>/items/show/248">UNIQUE EUNUQUE</a></li>
                                         </ul>
                                     </li>
                                     <li>
                                         <span>GEORGES<br>RIBEMONT-DESSAIGNES:</span>
                                         <ul>
                                             <li></li>
-                                            <li><a href="<?php echo WEB_ROOT; ?>/collections/show/">EMPEREUR DE CHINE</a></li>
-                                            <li><a href="<?php echo WEB_ROOT; ?>/collections/show/">EXPOSITION DADA GEORGES RIBEMONT-DESSAIGNES</a></li>
-                                            <li><a href="<?php echo WEB_ROOT; ?>/collections/show/">LEDANTU LE PHARE (PREFACE TO THE POEM BY ILIAZD)</a></li>
+                                            <li><a href="<?php echo WEB_ROOT; ?>/items/show/245">EMPEREUR DE CHINE</a></li>
+                                            <li><a href="<?php echo WEB_ROOT; ?>/items/show/244">EXPOSITION DADA GEORGES RIBEMONT-DESSAIGNES</a></li>
+                                            <li><a href="<?php echo WEB_ROOT; ?>/items/show/">LEDANTU LE PHARE (PREFACE TO THE POEM BY ILIAZD)</a></li>
                                         </ul>
                                     </li>
                                     <li>
                                         <span>ALFRED SAUERMANN</span>
                                         <ul>
-                                            <li><a href="<?php echo WEB_ROOT; ?>/collections/show/">DADA-ENZYKLOPAEDIE DES OSIRIS</a></li>
+                                            <li><a href="<?php echo WEB_ROOT; ?>/items/show/246">DADA-ENZYKLOPAEDIE DES OSIRIS</a></li>
                                         </ul>
                                     </li>
                                     <li>
                                         <span>BRUNO SCHÖNLANK:</span>
                                         <ul>
-                                            <li><a href="<?php echo WEB_ROOT; ?>/collections/show/">SONNIGES LAND</a></li>
+                                            <li><a href="<?php echo WEB_ROOT; ?>/items/show/242">SONNIGES LAND</a></li>
                                         </ul>
                                     </li>
                                     <li>
                                         <span>KURT SCHWITTERS:</span>
                                         <ul>
-                                            <li><a href="<?php echo WEB_ROOT; ?>/collections/show/">ANNA BLUME DICHTUNGEN (1ST PRINTING)</a></li>
-                                            <li><a href="<?php echo WEB_ROOT; ?>/collections/show/">ANNA BLUME DICHTUNGEN (2ND PRINTING)</a></li>
-                                            <li><a href="<?php echo WEB_ROOT; ?>/collections/show/">MEMOIREN ANNA BLUMES IN BLEIE</a></li>
+                                            <li><a href="<?php echo WEB_ROOT; ?>/items/show/240">ANNA BLUME DICHTUNGEN (1ST PRINTING)</a></li>
+                                            <li><a href="<?php echo WEB_ROOT; ?>/items/show/241">ANNA BLUME DICHTUNGEN (2ND PRINTING)</a></li>
+                                            <li><a href="<?php echo WEB_ROOT; ?>/items/show/239">MEMOIREN ANNA BLUMES IN BLEIE</a></li>
                                         </ul>
                                     </li>
                                     <li>
                                         <span>ARTHUR SEGAL:</span>
                                         <ul>
-                                            <li><a href="<?php echo WEB_ROOT; ?>/collections/show/">VOM STRANDE</a></li>
+                                            <li><a href="<?php echo WEB_ROOT; ?>/items/show/238">VOM STRANDE</a></li>
                                         </ul>
                                     </li>
                                     <li>
                                         <span>WALTER SERNER:</span>
                                         <ul>
-                                            <li><a href="<?php echo WEB_ROOT; ?>/collections/show/">LETZTE LOCKERUNG: MANIFEST DADA</a></li>
-                                            <li><a href="<?php echo WEB_ROOT; ?>/collections/show/">DIE SITTENVERDERBNIS</a></li>
-                                            <li><a href="<?php echo WEB_ROOT; ?>/collections/show/">ZUM BLAUEN AFFEN</a></li>
+                                            <li><a href="<?php echo WEB_ROOT; ?>/items/show/237">LETZTE LOCKERUNG: MANIFEST DADA</a></li>
+                                            <li><a href="<?php echo WEB_ROOT; ?>/items/show/233">DIE SITTENVERDERBNIS</a></li>
+                                            <li><a href="<?php echo WEB_ROOT; ?>/items/show/231">ZUM BLAUEN AFFEN</a></li>
                                         </ul>
                                     </li>
                                     <li>
                                         <span>PHILIPPE SOUPAULT:</span>
                                         <ul>
-                                            <li><a href="<?php echo WEB_ROOT; ?>/collections/show/">GARAGE</a></li>
-                                            <li><a href="<?php echo WEB_ROOT; ?>/collections/show/">ROSE DES VENTS</a></li>
-                                            <li><a href="<?php echo WEB_ROOT; ?>/collections/show/">WESTWEGO</a></li>
+                                            <li><a href="<?php echo WEB_ROOT; ?>/items/show/230">GARAGE</a></li>
+                                            <li><a href="<?php echo WEB_ROOT; ?>/items/show/229">ROSE DES VENTS</a></li>
+                                            <li><a href="<?php echo WEB_ROOT; ?>/items/show/228">WESTWEGO</a></li>
                                         </ul>
                                     </li>
                                     <li>
                                         <span>CHRISTOF SPENGEMANN:</span>
                                         <ul>
-                                            <li><a href="<?php echo WEB_ROOT; ?>/collections/show/">KUNST KÜNSTLER PUBLIKUM</a></li>
-                                            <li><a href="<?php echo WEB_ROOT; ?>/collections/show/">DIE WAHRHEIT ÜBER ANNA BLUME</a></li>
+                                            <li><a href="<?php echo WEB_ROOT; ?>/items/show/227">KUNST KÜNSTLER PUBLIKUM</a></li>
+                                            <li><a href="<?php echo WEB_ROOT; ?>/items/show/226">DIE WAHRHEIT ÜBER ANNA BLUME</a></li>
                                         </ul>
                                     </li>
                                     <li>
                                         <span>SHINKICHI TAKAHASHI:</span>
                                         <ul>
-                                            <li><a href="<?php echo WEB_ROOT; ?>/collections/show/">DADA</a></li>
+                                            <li><a href="<?php echo WEB_ROOT; ?>/items/show/225">DADA</a></li>
                                         </ul>
                                     </li>
                                     <li>
                                         <span>TRISTAN TZARA:</span>
                                         <ul>
-                                            <li><a href="<?php echo WEB_ROOT; ?>/collections/show/">VINGT-CINQ POÈMES</a></li>
-                                            <li><a href="<?php echo WEB_ROOT; ?>/collections/show/">LA PREMIÈRE AVENTURE CÉLÉSTE DE MR. ANTIPYRINE</a></li>
+                                            <li><a href="<?php echo WEB_ROOT; ?>/items/show/224">VINGT-CINQ POÈMES</a></li>
+                                            <li><a href="<?php echo WEB_ROOT; ?>/items/show/223">LA PREMIÈRE AVENTURE CÉLÉSTE DE MR. ANTIPYRINE</a></li>
                                         </ul>
                                     </li>
                                     <li>
                                         <span>JACQUES VACHÉ:</span>
                                         <ul>
-                                            <li><a href="<?php echo WEB_ROOT; ?>/collections/show/">LETTRES DE GUERRE</a></li>
+                                            <li><a href="<?php echo WEB_ROOT; ?>/items/show/222">LETTRES DE GUERRE</a></li>
                                         </ul>
                                     </li>
                                     <li>
                                         <span>MELCHIOR VISCHER</span>
                                         <ul>
-                                            <li><a href="<?php echo WEB_ROOT; ?>/collections/show/">DER TEEMEISTER</a></li>
+                                            <li><a href="<?php echo WEB_ROOT; ?>/items/show/221">DER TEEMEISTER</a></li>
                                         </ul>
                                     </li>
                                     <li>
                                         <span>HERMYNIA ZUR MÜHLEN:</span>
                                         <ul>
-                                            <li><a href="<?php echo WEB_ROOT; ?>/collections/show/">WAS PETERCHENS FREUNDE ERZÄHLEN</a></li>
+                                            <li><a href="<?php echo WEB_ROOT; ?>/items/show/220">WAS PETERCHENS FREUNDE ERZÄHLEN</a></li>
                                         </ul>
                                     </li>
                                     <li>
                                         <span>EPHEMERA:</span>
                                         <ul>
-                                            <li><a href="<?php echo WEB_ROOT; ?>/collections/show/">DADA AUSSTELLUNG: DADA VORFRÜHLING</a></li>
-                                            <li><a href="<?php echo WEB_ROOT; ?>/collections/show/">ERSTE INTERNATIONALE DADA-MESSE: KATALOG</a></li>
-                                            <li><a href="<?php echo WEB_ROOT; ?>/collections/show/">EXCURSIONS & VISITES DADA: 1 ÈRE VISITE</a></li>
-                                            <li><a href="<?php echo WEB_ROOT; ?>/collections/show/">PAPILLONS DADA</a></li>
+                                            <li><a href="<?php echo WEB_ROOT; ?>/items/show/219">DADA AUSSTELLUNG: DADA VORFRÜHLING</a></li>
+                                            <li><a href="<?php echo WEB_ROOT; ?>/items/show/218">ERSTE INTERNATIONALE DADA-MESSE: KATALOG</a></li>
+                                            <li><a href="<?php echo WEB_ROOT; ?>/items/show/217">EXCURSIONS & VISITES DADA: 1 ÈRE VISITE</a></li>
+                                            <li><a href="<?php echo WEB_ROOT; ?>/collections/show/132">PAPILLONS DADA</a></li>
                                         </ul>
                                     </li>
                                 </ul>
@@ -433,7 +433,7 @@
         </div>
         <!-- / container -->
     </header>
-        
+
         <article id="content" role="main" tabindex="-1">
-        
+
             <?php fire_plugin_hook('public_content_top', array('view'=>$this)); ?>
